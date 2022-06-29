@@ -5,14 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript in Browser</title>
-  
+
+<link rel="stylesheet" type="text/css" href="public/css/styles.css">
 </head>
 <body>
 
-<div style="width: 100%; height: 40rem;display: flex;justify-content: center;align-items: center;">
 
-    <button type="button" value="submit" id="btnhex">Click To Change Hex Color Background</button>
-    <script src="app.js"></script>
+<div class="logo-title">
+  <p class="top-text"> Our<span style="color: blue;">Store</span></p>
 </div>
+
+<div class="container">
+
+  <div id="btn-box" class="">
+   
+     <button id="all" class="btn" onclick="FilterCards(this.id)">All</button >
+     <button id="guitar" class="btn" onclick="FilterCards(this.id)">Guitar</button >
+     <button id="handpan" class="btn" onclick="FilterCards(this.id)">Hadnpan</button >
+     <button id="drum" class="btn" onclick="FilterCards(this.id)">Drum</button >
+     <button id="dig" class="btn" onclick="FilterCards(this.id)">Didgeridoo</button >
+  
+  </div>
+ 
+</div>
+
+<div class="container">
+
+  <button class="lable" onclick="SearchBox()">Search:</button>
+  <input id="searchbox" class="searchbox" type="search" placeholder=" Search Your Instrument" >
+
+</div>
+
+<div class="container ">
+
+  <div  class="card guitar">
+    <img src="public/images/ibanez-standard-rg421-bss-blackberry-sunburst.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Electric Guitar</b></h4>
+      <p>Ibanez RG421 Blackberry</p>
+    </div>
+  </div>
+
+  <div  class="card guitar">
+    <img src="public/images/ibanez-standard-sa260fm-tgb-transparent-gray-burst.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Electric Guitar</b></h4>
+      <p>Ibanez SA260FM Gray Burst</p>
+    </div>
+  </div>
+
+  <div class="card handpan">
+    <img src="public/images/afroton-panamor-pro-handpan.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Handpan</b></h4>
+      <p>Afroton Panamor Pro</p>
+    </div>
+  </div>
+
+  <div class="card handpan">
+    <img src="public/images/meinl-hd2-equinox-sonic-energy-harmonic-art-handpan.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Handpan</b></h4>
+      <p>Equinox Sonic Energy Harmonic</p>  
+    </div>
+  </div>
+
+  <div class="card drum">
+    <img src="public/images/fame-maple-standard-jungle-set-schlagzeug-tuerkis.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Drum</b></h4>
+      <p>Fame Maple Jungle Set Schlagzeug Tuerkis</p>
+    </div>
+  </div>
+
+  <div class="card drum">
+    <img src="public/images/sonor-aqx-studio-set-rms-red-moon-sparkle.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Drum</b></h4>
+      <p>Sonor Red Moon Sparkle</p>
+    </div>
+  </div>
+
+  <div class="card didgeridoo">
+    <img src="public/images/toca-percussion-curved-didgeridoo-didg-cts-50-tribal-sun.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Didgeridoo</b></h4>
+      <p>Toca CTS50 Tribal Sun</p>
+    </div>
+  </div>
+
+  <div class="card didgeridoo">
+    <img src="public/images/meinl-bamboo-didgeridoo-ddg1-br-brown.webp" alt="Avatar" style="width:100%">
+    <div class="text-card ">
+      <h4><b>Didgeridoo</b></h4>
+      <p>Bamboo BR Brown</p>
+    </div>
+  </div>
+
+</div>
+<script src="app.js"></script>
 </body>
 </html>
